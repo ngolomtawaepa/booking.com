@@ -107,7 +107,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text text-center">
-                                <h3>Beautiful Serene</h3>
+                                <h3>Belle sereine</h3>
                                 <p>
                                     Débloquez pour profiter de la vue sur Serene</p>
                             </div>
@@ -120,7 +120,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text text-center">
-                                <h3>Beach Resort</h3>
+                                <h3>Station balnéaire</h3>
                                 <p>Déverrouillez pour profiter de la vue</p>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text text-center">
-                                <h3>Beautiful Serene</h3>
+                                <h3>Belle sereine</h3>
                                 <p>Débloquez pour profiter de la vue sur la nature</p>
                             </div>
                         </div>
@@ -150,9 +150,9 @@
                 <div class="col-xl-5 col-lg-5">
                     <div class="about_info">
                         <div class="section_title mb-20px">
-                            <span>About Us</span>
-                            <h3>A Luxuries Hotel Rooms <br>
-                                with Beautiful serene</h3>
+                            <span>À propos de nous</span>
+                            <h3>Chambres d'hôtel de luxe<br>
+                                avec une belle sérénité</h3>
                         </div>
                         <p>Bienvenue à Katwenge, là où l'hospitalité rencontre 
                             confort, élégance et service exceptionnel. 
@@ -164,7 +164,7 @@
                                 on se sent comme chez soi loin de chez soi pendant
                                  offrant des équipements de classe mondiale et des équipements de premier ordre
                                  service.</p>
-                        <a href="#" class="line-button">Learn More</a>
+                        <!-- <a href="#" class="line-button">Learn More</a> -->
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-7">
@@ -360,7 +360,7 @@
                                 Bulletin
                             </h3>
                             <form action="#" class="newsletter_form">
-                                <input type="text" placeholder="Enter your mail">
+                                <input type="text" placeholder="Entrez votre courrier">
                                 <button type="submit">S'inscrire</button>
                             </form>
                             <p class="newsletter_text">Abonnez-vous à la newsletter pour recevoir des mises à jour</p>
@@ -411,7 +411,7 @@
     <form id="test-form" class="white-popup-block mfp-hide">
         <div class="popup_box ">
                 <div class="popup_inner">
-                    <h3>Book Now</h3>
+                    <h3>Réservez maintenant</h3>
                     <form action="#">
                         <div class="row">
                             <div class="col-xl-6">
@@ -455,31 +455,38 @@
                                 <input type="text" id="nationalite" name="nationalite"><br><br>
                             </div>
                             <div class="col-xl-6">
-                                <input id="datepicker" placeholder="Check in date">
+                                <input id="datepicker" placeholder="Date d'arrivée">
                             </div>
                             <div class="col-xl-6">
-                                <input id="datepicker2" placeholder="Check out date">
+                                <input id="datepicker2" placeholder="Date de départ">
                             </div>
                             
                             <div class="col-xl-12">
                                 <select class="form-select wide" id="default-select" class="">
-                                    <option data-display="Room type">Room type</option>
-                                    <option value="1">Laxaries Rooms</option>
-                                    <option value="2">Deluxe Room</option>
-                                    <option value="3">Signature Room</option>
-                                    <option value="4">Couple Room</option>
+                                    <option data-display="Type de chambre">Type de chambre</option>
+                                    <option value="1">Chambres Laxaires</option>
+                                    <option value="2">Chambre de Luxe</option>
+                                    <option value="3">Chambre Signature</option>
+                                    <option value="4">Chambre Couple</option>
                                 </select>
                             </div>
                             <div class="col-xl-12">
                                 <select class="form-select wide" id="default-select" class="">
-                                    <option data-display="Payment Method">Payment Method</option>
-                                    <option value="1">Mpesa</option>
-                                    <option value="2">Airtel</option>
-                                    <option value="3">Stripe</option>
+                                    <option data-display="Mode de paiement">Payment Method</option>
+                                    <option value="Mpesa">Mpesa</option>
+                                    <option value="Airtel">Airtel</option>
+                                    <option value="Stripe">Stripe</option>
                                 </select>
                             </div>
                             <div class="col-xl-12">
-                                <label for="montant">Total:</label><br>
+                                <select class="form-select wide" id="default-select" class="">
+                                    <option data-display="etatCivil">etatCivil</option>
+                                    <option value="Mariée">Mariée</option>
+                                    <option value="Célibataire">Célibataire</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-12">
+                                <label for="montant">Totale:</label><br>
                                 <input type="number" id="montant" name="montant" readonly value="10"><br>
                             </div>
                             <div class="col-xl-12">
@@ -564,11 +571,11 @@
                         contentType: "application/json",
                         data: JSON.stringify(reservationData),
                         success: function(response) {
-                            alert("Reservation successful!");
+                            alert("Réservation réussie !");
                             console.log(response);
                         },
                         error: function(error) {
-                            alert("Failed to make a reservation.");
+                            alert("Échec de la réservation.");
                             console.error(error);
                         }
                     });

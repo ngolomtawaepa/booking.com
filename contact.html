@@ -192,7 +192,7 @@
                                 Bulletin
                             </h3>
                             <form action="#" class="newsletter_form">
-                                <input type="text" placeholder="Enter your mail">
+                                <input type="text" placeholder="Entrez votre courrier">
                                 <button type="submit">S'inscrire</button>
                             </form>
                             <p class="newsletter_text">Abonnez-vous à la newsletter pour recevoir des mises à jour</p>
@@ -287,34 +287,42 @@
                                 <input type="text" id="nationalite" name="nationalite"><br><br>
                             </div>
                             <div class="col-xl-6">
-                                <input id="datepicker" placeholder="Check in date">
+                                <input id="datepicker" placeholder="Date d'arrivée">
                             </div>
                             <div class="col-xl-6">
-                                <input id="datepicker2" placeholder="Check out date">
+                                <input id="datepicker2" placeholder="Date de départ">
                             </div>
                             
                             <div class="col-xl-12">
                                 <select class="form-select wide" id="default-select" class="">
-                                    <option data-display="Room type">Room type</option>
-                                    <option value="1">Laxaries Rooms</option>
-                                    <option value="2">Deluxe Room</option>
-                                    <option value="3">Signature Room</option>
-                                    <option value="4">Couple Room</option>
+                                    <option data-display="Type de chambre">Type de chambre</option>
+                                    <option value="1">Chambres Laxaires</option>
+                                    <option value="2">Chambre de Luxe</option>
+                                    <option value="3">Chambre Signature</option>
+                                    <option value="4">Chambre Couple</option>
                                 </select>
                             </div>
                             <div class="col-xl-12">
                                 <select class="form-select wide" id="default-select" class="">
-                                    <option data-display="Payment Method">Payment Method</option>
-                                    <option value="1">Mpesa</option>
-                                    <option value="2">Airtel</option>
-                                    <option value="3">Stripe</option>
+                                    <option data-display="Mode de paiement">Mode de paiement</option>
+                                    <option value="Mpesa">Mpesa</option>
+                                    <option value="Airtel">Airtel</option>
+                                    <option value="Stripe">Stripe</option>
                                 </select>
                             </div>
                             <div class="col-xl-12">
-                                <label for="montant">Total:</label><br>
+                                <select class="form-select wide" id="default-select" class="">
+                                    <option data-display="etatCivil">etatCivil</option>
+                                    <option value="Mariée">Mariée</option>
+                                    <option value="Célibataire">Célibataire</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-12">
+                                <label for="montant">Totale:</label><br>
                                 <input type="number" id="montant" name="montant" readonly value="$10"><br>
                             </div>
                             <div class="col-xl-12">
+                                <!-- <div><button class="intaSendPayButton" data-amount="10" data-currency="KES" data-email="samsonyounis26@gmail.com" data-first_name="samson" data-last_name="osman" data-country="KE">Pay Now</button></div> -->
                                 <button type="button" class="boxed-btn3" onclick="submitReservation()">Book</button>
                             </div>
                         </div>
@@ -396,11 +404,11 @@
                     contentType: "application/json",
                     data: JSON.stringify(reservationData),
                     success: function(response) {
-                        alert("Reservation successful!");
+                        alert("Réservation réussie !");
                         console.log(response);
                     },
                     error: function(error) {
-                        alert("Failed to make a reservation.");
+                        alert("Échec de la réservation.");
                         console.error(error);
                     }
                 });
