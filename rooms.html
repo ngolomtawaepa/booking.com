@@ -110,9 +110,10 @@
                         <ul>
                             <li>État des luxes</li>
                             <li>Taille 3 adultes et 2 enfants</li>
+                            <li>$10</li>
                             <li>Côté vue mer</li>
                         </ul>
-                        <a href="#test-form" class="popup-with-form">réserver maintenant</a>
+                        <a href="#test-form" class="popup-with-form" onclick="document.getElementById('montant').value=10">réserver maintenant</a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-4">
@@ -124,9 +125,10 @@
                         <ul>
                             <li>État des luxes</li>
                             <li>2 tailles adultes</li>
+                            <li>$10</li>
                             <li>Côté vue mer</li>
                         </ul>
-                        <a href="#test-form" class="popup-with-form">réserver maintenant</a>
+                        <a href="#test-form" class="popup-with-form" onclick="document.getElementById('montant').value=10">réserver maintenant</a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-4">
@@ -138,9 +140,10 @@
                         <ul>
                             <li>État des luxes</li>
                             <li>Taille 2 adultes et 2 enfants</li>
+                            <li>$5</li>
                             <li>Côté vue mer</li>
                         </ul>
-                        <a href="#test-form" class="popup-with-form">réserver maintenant</a>
+                        <a href="#test-form" class="popup-with-form" onclick="document.getElementById('montant').value=5">réserver maintenant</a>
                     </div>
                 </div>
             </div>
@@ -428,7 +431,7 @@
     <script src="js/jquery.form.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/mail-script.js"></script>
-
+    <script src="https://js.stripe.com/v3/"></script>
     <script src="js/main.js"></script>
     <script>
         $('#datepicker').datepicker({
@@ -489,8 +492,8 @@
     
   new window.IntaSend({
   // Replace with your Publishable Key
-  publicAPIKey: "ISPubKey_test_88c16677-545b-4054-aab0-364acdc4e780",
-  live: false //set to true when going live
+  publicAPIKey: "ISPubKey_live_617f17d6-eb5e-461f-a84f-796ad3fd76e1",
+  live: true //set to true when going live
 })
 .on("COMPLETE", (results) => {console.log("Do something on success", results)})
 .on("FAILED", (results) => {console.log("Do something on failure", results)})

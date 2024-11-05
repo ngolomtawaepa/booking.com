@@ -203,7 +203,7 @@
                             <span>À partir de 5$/nuit</span>
                             <h3>Chambre Supérieure</h3>
                         </div>
-                        <a href="#test-form" class="popup-with-form">réserver maintenant</a>
+                        <a href="#test-form" class="popup-with-form" onclick="document.getElementById('montant').value=5">réserver maintenant</a>
                     </div>
                 </div>
             </div>
@@ -215,7 +215,7 @@
                             <span>À partir de 10$/nuit</span>
                             <h3>Chambre de Luxe</h3>
                         </div>
-                        <a href="#test-form" class="popup-with-form">réserver maintenant</a>
+                        <a href="#test-form" class="popup-with-form" onclick="document.getElementById('montant').value=10">réserver maintenant</a>
                     </div>
                 </div>
             </div>
@@ -227,7 +227,7 @@
                             <span>À partir de 5$/nuit</span>
                             <h3>Chambre Signature</h3>
                         </div>
-                        <a href="#test-form" class="popup-with-form">réserver maintenant</a>
+                        <a href="#test-form" class="popup-with-form" onclick="document.getElementById('montant').value=5">réserver maintenant</a>
                     </div>
                 </div>
             </div>
@@ -236,10 +236,11 @@
                     <img src="img/rooms/4.jpg" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
+                            <span id="1" style="display: none;">5</span>
                             <span>À partir de 5$/nuit</span>
                             <h3>Chambre Couple</h3>
                         </div>
-                        <a href="#test-form" class="popup-with-form">réserver maintenant</a>
+                        <a href="#test-form" class="popup-with-form" onclick="" onclick="document.getElementById('montant').value=5">réserver maintenant</a>
                     </div>
                 </div>
             </div>
@@ -487,7 +488,7 @@
                             </div>
                             <div class="col-xl-12">
                                 <label for="montant">Totale:</label><br>
-                                <input type="number" id="montant" name="montant" readonly value="10"><br>
+                                <input type="number" id="montant" name="montant" readonly value=""><br>
                             </div>
                             <div class="col-xl-12">
                                 <button type="button" class="boxed-btn3" onclick="submitReservation()">Book</button>
@@ -581,6 +582,20 @@
                     });
                 }
             </script>
+
+<!-- <script>
+    // Get references to elements
+    const bookNow = document.getElementById("popup-with-form");
+    const montant = document.getElementById("montant");
+
+    // Set up event listener for the "Buy Now" button
+    bookNow.addEventListener("click", function() {
+      // Set the item price in the form field
+      priceInput.value = itemPrice
+      
+    });
+  </script> -->
+
 
 
 
