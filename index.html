@@ -205,7 +205,7 @@
                     <img src="img/rooms/2.jpg" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
+                            <span>From $5/night</span>
                             <h3>Superior Room</h3>
                         </div>
                         <a href="#" class="line-button">book now</a>
@@ -217,7 +217,7 @@
                     <img src="img/rooms/3.jpg" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
+                            <span>From $10/night</span>
                             <h3>Deluxe Room</h3>
                         </div>
                         <a href="#" class="line-button">book now</a>
@@ -229,7 +229,7 @@
                     <img src="img/rooms/1.jpg" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
+                            <span>From $10/night</span>
                             <h3>Signature Room</h3>
                         </div>
                         <a href="#" class="line-button">book now</a>
@@ -241,7 +241,7 @@
                     <img src="img/rooms/4.jpg" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
+                            <span>From $5/night</span>
                             <h3>Couple Room</h3>
                         </div>
                         <a href="#" class="line-button">book now</a>
@@ -266,9 +266,9 @@
                             </div>
                             <div class="col-xl-6 col-md-6">
                                 <div class="phone_num">
-                                    <a href="tel:+254701852538">
+                                    <a href="tel:+243973987611">
                                         <i class="fa fa-whatsapp" style="font-size:50px; margin: 10px;"></i>
-                                        +254701852538 
+                                        +243973987611 
                                     </a>
                                 </div>
                             </div>
@@ -335,7 +335,7 @@
                             <h3 class="footer_title">
                                 address
                             </h3>
-                            <p class="footer_text"> 200, Green road, Kinshasa, <br>DRC</p>
+                            <p class="footer_text"> Uvrira, South Kivu <br>DRC</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6 col-lg-3">
@@ -343,7 +343,7 @@
                             <h3 class="footer_title">
                                 Reservation
                             </h3>
-                            <p class="footer_text">+254701852538 <br>
+                            <p class="footer_text">+243973987611<br>
                                 reservation@katwenge.com</p>
                         </div>
                     </div>
@@ -413,59 +413,88 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- link that opens popup -->
 
     <!-- form itself end-->
-        <form id="test-form" class="white-popup-block mfp-hide">
-                <div class="popup_box ">
-                        <div class="popup_inner">
-                            <h3>Book Now</h3>
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <input id="datepicker" placeholder="Check in date">
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <input id="datepicker2" placeholder="Check out date">
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <select class="form-select wide" id="default-select" class="">
-                                            <option data-display="Adult">1</option>
-                                            <option value="1">2</option>
-                                            <option value="2">3</option>
-                                            <option value="3">4</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <select class="form-select wide" id="default-select" class="">
-                                            <option data-display="Children">1</option>
-                                            <option value="1">2</option>
-                                            <option value="2">3</option>
-                                            <option value="3">4</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xl-12">
-                                        <select class="form-select wide" id="default-select" class="">
-                                            <option data-display="Room type">Room type</option>
-                                            <option value="1">Laxaries Rooms</option>
-                                            <option value="2">Deluxe Room</option>
-                                            <option value="3">Signature Room</option>
-                                            <option value="4">Couple Room</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xl-12">
-                                        <select class="form-select wide" id="default-select" class="">
-                                            <option data-display="Payment Method">Payment Method</option>
-                                            <option value="1">Mpesa</option>
-                                            <option value="2">Airtel</option>
-                                            <option value="3">Stripe</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xl-12">
-                                        <button type="submit" class="boxed-btn3">Book</button>
-                                    </div>
-                                </div>
-                            </form>
+    <form id="test-form" class="white-popup-block mfp-hide">
+        <div class="popup_box ">
+                <div class="popup_inner">
+                    <h3>Book Now</h3>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <label for="nomClient">Nom Client:</label><br>
+                                <input type="text" id="nomClient" name="nomClient"><br>
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="prenom">Prenom:</label><br>
+                                <input type="text" id="prenom" name="prenom"><br>
+                            </div><br>
+                            <div class="col-xl-6">
+                                <label for="telephone">telephone</label>
+                                <input type="tel" id="telephone" name="telephone"><br>
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="email">email</label>
+                                <input type="email" id="email" name="email"><br>
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="adresse">adresse</label>
+                                <input type="text" id="adresse" name="adresse"><br>
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="motif">motif</label>
+                                <input type="text" id="motif" name="motif"><br><br>
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="etatCivil">etat Civil</label>
+                                <input type="text" id="etatCivil" name="etatCivil"><br><br>
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="provenance">provenance</label>
+                                <input type="text" id="provenance" name="provenance"><br><br>
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="profession">profession</label>
+                                <input type="text" id="profession" name="profession"><br><br>
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="nationalite">nationalite</label>
+                                <input type="text" id="nationalite" name="nationalite"><br><br>
+                            </div>
+                            <div class="col-xl-6">
+                                <input id="datepicker" placeholder="Check in date">
+                            </div>
+                            <div class="col-xl-6">
+                                <input id="datepicker2" placeholder="Check out date">
+                            </div>
+                            
+                            <div class="col-xl-12">
+                                <select class="form-select wide" id="default-select" class="">
+                                    <option data-display="Room type">Room type</option>
+                                    <option value="1">Laxaries Rooms</option>
+                                    <option value="2">Deluxe Room</option>
+                                    <option value="3">Signature Room</option>
+                                    <option value="4">Couple Room</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-12">
+                                <select class="form-select wide" id="default-select" class="">
+                                    <option data-display="Payment Method">Payment Method</option>
+                                    <option value="1">Mpesa</option>
+                                    <option value="2">Airtel</option>
+                                    <option value="3">Stripe</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-12">
+                                <label for="montant">Total:</label><br>
+                                <input type="number" id="montant" name="montant" readonly value="$10"><br>
+                            </div>
+                            <div class="col-xl-12">
+                                <button type="button" class="boxed-btn3" onclick="submitReservation()">Book</button>
+                            </div>
                         </div>
-                    </div>
-            </form>
+                    </form>
+                </div>
+            </div>
+    </form>
     <!-- form itself end -->
 
     <!-- JS here -->
@@ -511,6 +540,45 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
         });
     </script>
+            <script>
+                function submitReservation() {
+                    // Collect data from the form
+                    const reservationData = {
+                        nomClient: $('#nomClient').val(),
+                        prenom: $('#prenom').val(),
+                        telephone: $('#telephone').val(),
+                        email: $('#email').val(),
+                        adresse: $('#adresse').val(),
+                        motif: $('#motif').val(),
+                        dateArriv: $('#datepicker').val(),
+                        dateDepart: $('#datepicker2').val(),
+                        modePaiement: $('#default-select').val(),
+                        etatCivil: $('#etatCivil').val(),
+                        provenance: $('#provenance').val(),
+                        profession: $('#profession').val(),
+                        nationalite: $('#nationalite').val(),
+                        montant: $('#montant').val()
+    
+    
+                    };
+        
+                    // Send data to the Spring Boot API using AJAX
+                    $.ajax({
+                        url: "https://bookhome-b268ec3975fa.herokuapp.com/api/v1/reserve",
+                        type: "POST",
+                        contentType: "application/json",
+                        data: JSON.stringify(reservationData),
+                        success: function(response) {
+                            alert("Reservation successful!");
+                            console.log(response);
+                        },
+                        error: function(error) {
+                            alert("Failed to make a reservation.");
+                            console.error(error);
+                        }
+                    });
+                }
+            </script>
 
 
 
