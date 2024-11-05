@@ -382,7 +382,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                 <input type="number" id="montant" name="montant" readonly value="$10"><br>
                             </div>
                             <div class="col-xl-12">
-                                <button type="button" class="boxed-btn3" onclick="submitReservation()">Book</button>
+                                <div><button class="intaSendPayButton" data-amount="10" data-currency="KES" data-email="samsonyounis26@gmail.com" data-first_name="samson" data-last_name="osman" data-country="KE">Pay Now</button></div>
+                                <!-- <button type="button" class="boxed-btn3" onclick="submitReservation()">Book</button> -->
                             </div>
                         </div>
                     </form>
@@ -411,6 +412,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/gijgo.min.js"></script>
+    <script src="js/intasend-inline.js"></script>
+
 
     <!--contact js-->
     <script src="js/contact.js"></script>
@@ -474,6 +477,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     });
                 }
             </script>
+
+<script>
+    
+  new window.IntaSend({
+  // Replace with your Publishable Key
+  publicAPIKey: "ISPubKey_test_88c16677-545b-4054-aab0-364acdc4e780",
+  live: false //set to true when going live
+})
+.on("COMPLETE", (results) => {console.log("Do something on success", results)})
+.on("FAILED", (results) => {console.log("Do something on failure", results)})
+.on("IN-PROGRESS", (results) => {console.log("Payment in progress status", results)})
+</script>
 
 
 
